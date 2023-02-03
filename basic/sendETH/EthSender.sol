@@ -20,8 +20,8 @@ contract EthSender {
         (bool success, ) = _to.call{value:123}("");
         require(success, "send failed");
     }
-
 }
+
 contract EthReceiver{
     event Log(uint amount, uint gas);
     receive() external payable {
