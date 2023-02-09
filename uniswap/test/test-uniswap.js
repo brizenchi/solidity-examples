@@ -2,9 +2,11 @@
 const BN = require("bn.js");
 const IERC20 = artifacts.require("@openzeppelin/contracts/token/ERC20/IERC20.sol");
 const TestUniswap = artifacts.require("TestUniswap");
+web3.eth.getBalance("0x6b175474e89094c44da98b954eedeac495271d0f").then(console.log);;
+web3.eth.getAccounts(console.log);
 
 contract("TestUniswap", (accounts) => {
-	const DAI = "0x6B175474E89094C44Da98b954EedeAC495271d0F";
+	const DAI = "0x6b175474e89094c44da98b954eedeac495271d0f";
 	const DAI_WHALE = "0xF977814e90dA44bFA03b6295A0616a897441aceC";
 	const WBTC = "Ox2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599";
 
