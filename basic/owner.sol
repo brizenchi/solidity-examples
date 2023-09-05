@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.7;
 
-// data types - values and references
-
 contract Ownerable {
     address public owner;
     constructor() {
